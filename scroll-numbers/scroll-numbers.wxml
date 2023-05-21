@@ -1,0 +1,10 @@
+<view class="scroll-numbers custom-number-style" style="font-size: {{fontSize}}rpx;display: {{inlineFlex?'inline-flex':'flex'}};color: {{color}};">
+  <block wx:for="{{valueArr}}" wx:key="valueArray">
+    <view class="scroll-numbers-item scroll-numbers-isNaN" wx:if="{{item.isNaN}}" style="height: {{itemHeight}}px;{{isNaNAnimate}}">{{item.value}}</view>
+    <view class="scroll-numbers-item scroll-numbers-isNumber" wx:else style="height: {{itemHeight}}px;">
+      <view class="scroll-numbers-animate-item" style="transition-duration: {{duration}}ms; {{animationStyleArr[index]}}">
+        <view class="number-item" wx:for="{{numberList}}" wx:key="numberList">{{item}}</view>
+      </view>
+    </view>
+  </block>
+</view>

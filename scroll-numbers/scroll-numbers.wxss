@@ -1,0 +1,21 @@
+.scroll-numbers {
+  align-items: flex-end;
+}
+.scroll-numbers-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+}
+.scroll-numbers-isNaN {
+  transition: all ease-in-out;
+  transform: translateY(-500%);
+  opacity: 0;
+}
+.scroll-numbers-animate-item {
+  width: 100%;
+  height: 100%;
+  transition: all ease-in-out;
+  opacity: 0;
+}
